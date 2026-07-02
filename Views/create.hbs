@@ -1,0 +1,24 @@
+<main class="create">
+
+    {{#if error}}
+    <div class="error-container">
+        <p>{{error}}</p>
+    </div>
+    {{/if}}
+
+    <section id="create">
+        <div class="form">
+            <h2>Add Property</h2>
+            <form action="/AddProperty" method="POST" class="create-form">
+                <input type="text" id="type" name="type" placeholder="Type" />
+                <input type="text" id="location" name="location" placeholder="Location" />
+                <input type="number" id="area" name="area" placeholder="Area" />
+                <input type="text" id="image-url" name="image" placeholder="Image URL" />
+                <input type="number" id="price" name="price" placeholder="Price" />
+                <input type="number" id="contact" name="contact" placeholder="For Contacts..." />
+                <textarea id="description" placeholder="Description..." name="description"></textarea>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </section>
+</main>

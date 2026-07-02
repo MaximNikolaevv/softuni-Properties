@@ -1,0 +1,95 @@
+
+#report-section {
+  margin-top: -50px;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.report-property img {
+  height: 42vh;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.report-list {
+  list-style-type: none;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.report-section h2 {
+ color: wheat;
+ text-shadow: 2px 2px black;
+}
+
+.title,
+.salary {
+  font-size: 21px;
+}
+
+.report-property {
+  display: flex;
+align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  width: 50vw;
+  height: 75vh;
+  margin: 25px auto;
+  margin-bottom: 120px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid rgba(169, 152, 198, 0.781);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.682), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.report-property div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.report-property h3{
+  font-size: 40px;
+}
+
+.details-btn {
+  text-decoration: none;
+  margin: auto 50px;
+  font-size: 21px;
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+background-image: linear-gradient(45deg, #5dddee, #0080f8);
+border-radius: 10px;
+text-shadow: 1px 1px black;
+}
+
+.report-property p {
+  min-width: 90% !important;
+  font-size: 21px;
+  max-height: 50px;
+  max-width: 30%;
+  text-align: center;
+  margin: 9px;
+}
+
+.property span {
+  padding: 10px;
+  margin: auto;
+}
+
+#no-post h2 {
+  margin-top: 100px;
+  color: wheat;
+  font-size: 70px;
+}

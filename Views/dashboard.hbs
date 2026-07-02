@@ -1,0 +1,38 @@
+<main class="dashboard">
+    <section id="dashboard">
+        <h2>Properties</h2>
+
+        {{#if properties.length}}
+        <ul class="property-wrapper">
+
+            {{#each properties}}
+            <li class="property">
+                <img src="{{this.image}}" alt="Property Image" />
+
+                <p>
+                    <strong>Type: </strong>
+                    <span class="type">{{this.type}}</span>
+                </p>
+
+                <p>
+                    <strong>Area: </strong>
+                    <span class="area">{{this.area}} sq.m</span>
+                </p>
+
+                <p>
+                    <strong>Location: </strong>
+                    <span class="location">{{this.location}}</span>
+                </p>
+
+                <a class="details-btn" href="/details/{{this._id}}">Details</a>
+            </li>
+            {{/each}}
+
+        </ul>
+        {{else}}
+        <div id="no-post">
+            <h2>There are no properties yet!</h2>
+        </div>
+        {{/if}}
+    </section>
+</main>

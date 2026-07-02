@@ -1,0 +1,38 @@
+<main class="edit">
+
+
+    {{#if error}}
+    <div class="error-container">
+        <p>{{error}}</p>
+    </div>
+    {{/if}}
+
+
+    <section id="edit">
+        <div class="form">
+            <h2>Edit Property Info</h2>
+
+            <form class="edit-form" method="POST" action="/edit/{{CurrentProperty._id}}">
+                <input type="text" id="type" name="type" placeholder="Type" value="{{CurrentProperty.type}}" />
+
+                <input type="text" id="location" name="location" placeholder="Location"
+                    value="{{CurrentProperty.location}}" />
+
+                <input type="number" id="area" name="area" placeholder="Area" value="{{CurrentProperty.area}}" />
+
+                <input type="text" id="image-url" name="image" placeholder="Image URL"
+                    value="{{CurrentProperty.image}}" />
+
+                <input type="number" id="price" name="price" placeholder="Price" value="{{CurrentProperty.price}}" />
+
+                <input type="number" id="contact" name="contact" placeholder="For Contacts..."
+                    value="{{CurrentProperty.contact}}" />
+
+                <textarea id="description" name="description"
+                    placeholder="Description...">{{CurrentProperty.description}}</textarea>
+
+                <button type="submit">Edit</button>
+            </form>
+        </div>
+    </section>
+</main>

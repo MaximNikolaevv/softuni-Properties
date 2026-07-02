@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Dream Home</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="/">Home</a>
+
+                <a href="/Dashboard">Dashboard</a>
+                <a href="/Report">Report</a>
+            </div>
+            {{#if user}}
+            <div class="user">
+                <a href="/AddProperty">Add Property</a>
+                <a href="/Logout">Logout</a></div>
+            {{else}}
+            <div class="guest">
+                <a href="/Login">Login</a>
+                <a href="/Register">Register</a>
+            </div>
+                {{/if}}
+        </nav>
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
+
+    <footer>
+        SoftUni JS Back-End Exam 2025 &copy;
+    </footer>
+
+</body>
+
+</html>

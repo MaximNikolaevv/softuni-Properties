@@ -1,0 +1,31 @@
+<main class="home">
+    <section id="home">
+        <h1>Dream Home: Your New Life Starts Here!</h1>
+        <h2>
+            Discover your perfect property among thousands of verified listings.
+            Whether you are looking for a cozy apartment, a spacious house, or an affordable land plot,
+            at Dream Home you will find your new home easily and securely.
+        </h2>
+
+        <section id="last-added">
+
+            {{#if properties.length}}
+            {{#each properties}}
+            <div class="property-card">
+                <img src="{{this.image}}" alt="Property Image">
+
+                <div id="text-content">
+                    <p>Type: {{this.type}}</p>
+                    <p>Area: {{this.area}} sq.m</p>
+                </div>
+
+                <a class="details-btn" href="/details/{{this._id}}">Details</a>
+            </div>
+            {{/each}}
+            {{else}}
+            <p class="no-post">There are no properties yet!</p>
+            {{/if}}
+
+        </section>
+    </section>
+</main>
