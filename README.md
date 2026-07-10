@@ -1,2 +1,2 @@
 # softuni-Properties
-Softuni JS-Backend Project Course
+That is Softuni's JS BACKEND exam project.
